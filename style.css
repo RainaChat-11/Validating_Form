@@ -1,0 +1,292 @@
+/*STYLING FOR THE HEADING CLASS*/
+.heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color:azure;
+}   
+
+/*STYLING FOR THE FORM CONTAINER*/
+.form_container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 100vw;
+    background: linear-gradient(331deg, rgba(161,5,22,1) 4%, rgba(16,1,2,0.9837184873949579) 46%);
+}
+
+/*STYLING FOR THE BODY OF HTML*/
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.control{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+/*DISPLAYING SUCCESS*/
+.control.success input{
+    border-color: green;
+}
+
+
+/*DISPLAYING ERROR*/
+.control.error input{
+    border-color: red;
+}
+
+
+.control .fa-circle-check, .fa-circle-exclamation{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    visibility: hidden;
+}
+
+
+.fa-circle-check, .fa-circle-exclamation{
+    font-size: large;
+}
+
+
+.msg{
+    top: 41px !important;
+}
+
+
+.icon{
+    top: 10% !important;
+}
+
+
+.control.success i.fa-circle-check{
+    color: green;
+    visibility: visible;
+}
+
+
+.control small{
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+
+.control.error small{
+    visibility: visible;
+}
+
+
+.control.error i.fa-circle-exclamation{
+    color: red;
+    visibility: visible;
+}
+
+
+/*STYLING OF FORM*/
+form{
+    border: 2px solid gray;
+    width: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px 0px;
+    background-image: url(/image/nayawala.jpg);
+    background-size: cover;
+    background-image:100% 100%;
+    background-repeat: no-repeat;
+    box-shadow:4px 6px 30px 2px gray;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+form > div{
+    margin: 10px 25px;
+}
+
+
+/*INPUT SPACE*/
+.round_box, .name_box2{
+    border-radius: 5px;
+    width:300px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+
+/*INPUT SPACE*/
+.end_box{
+    border-radius: 5px;
+    max-width: fit-content;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: 130px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(222, 16, 16);
+    color: azure;
+}
+
+
+/*INPUT SPACE*/
+.name_box1{
+    border-radius: 5px;
+    width:300px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 1px; 
+    margin-left: 3px;
+}
+
+
+.name_box2{
+    margin-left: 3px;
+}
+
+
+i{
+    font-size: 25px;  
+    color: aliceblue;
+}
+
+
+.round_box:hover{
+    padding: 3px;
+}
+
+
+.name_box1:hover, .name_box2:hover{
+    padding: 3px;
+}
+
+
+.end_box:hover{
+    padding: 5px;
+    background:rgb(125, 125, 3);
+    cursor: pointer;
+    color: azure;
+}
+
+
+
+/* MEDIA QUERY FOR DIFFERENT SCREEN FORMAT */
+@media only screen and (max-width:600px)
+{
+    .heading{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        color:azure; 
+    }
+    form{
+        height: 370px;
+        width: 300px;
+    }
+    .name_box1 , .name_box2 ,.round_box{
+        border-radius: 5px;
+        width:200px;
+        height: 25px;
+        margin-bottom: 6px;
+        margin-top: 1px; 
+        margin-left: 3px;
+    }
+    .end_box{
+        border-radius: 5px;
+        max-width: fit-content;
+        height: 25px;
+        margin-bottom: 6px;
+        margin-left: 80px;
+        margin-top: 5px;
+        text-align: center;
+        background-color: rgb(222, 16, 16);
+        color: azure;
+    }
+    i{
+        font-size: 20px;  
+        color: aliceblue;
+    }
+    .control .fa-circle-check, .fa-circle-exclamation{
+        position: absolute;
+        right: 26px;
+        top: 9px;
+        visibility: hidden;
+    }
+    .fa-circle-check, .fa-circle-exclamation{
+        font-size:medium;
+    }
+    .control small{
+        visibility: hidden;
+        color: red;
+        position: absolute;
+        top: 30px;
+        left: 27px;
+        font-size: 12px;
+    }
+    .msg{
+        top: 30px !important;
+    }
+}
+
+
+@media only screen and (max-width:430px)
+{
+    .heading{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        color:azure; 
+    }
+    form{
+        height: 310px;
+        width: 230px;
+    }
+    .name_box1 , .name_box2 ,.round_box{
+        border-radius: 5px;
+        width:135px;
+        height: 20px;
+        margin-bottom: 3px;
+        margin-top: 1px; 
+        margin-left: 3px;
+    }
+    .end_box{
+        border-radius: 5px;
+        max-width: fit-content;
+        height: 25px;
+        margin-bottom: 6px;
+        margin-left: 50PX;
+        margin-top: 1px;
+        text-align: center;
+        background-color: rgb(222, 16, 16);
+        color: azure;
+    }
+    i{
+        font-size: 15px;  
+        color: aliceblue;
+    }
+    .control .fa-circle-check, .fa-circle-exclamation{
+        position: absolute;
+        right: 23px;
+        top: 7px;
+        visibility: hidden;
+    }
+    .fa-circle-check, .fa-circle-exclamation{
+        font-size: small;
+    }
+    .control small{
+        visibility: hidden;
+        color: red;
+        position: absolute;
+        top: 27px;
+        left: 22px;
+        font-size: 9px;
+    }
+    .msg{
+        top: 27px !important;
+    }
+}

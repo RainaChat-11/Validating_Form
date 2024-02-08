@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   <!--LINKING THE CSS SHEET-->
+    <script src="https://kit.fontawesome.com/caa8f5a8ca.js" crossorigin="anonymous"></script>   <!--SOURCE FOR IMPORTING ICONS-->
+    <title>FORM VALIDATION</title>
+</head>
+<body>
+<section class="form_container">  <!--SPACE FOR SECTION-->
+
+
+    <div class="heading">
+        <u> FORM VALIDATION </u>    <!--HEADING IN THE SECTION-->
+    </div> 
+
+
+    <form action="" id="form">   
+        <div class="control">   <!--DIVISION FOR NAME INPUT-->
+            <i class="fa-solid fa-user"></i>         <!--NAME ICON-->       
+            <input type="text" placeholder="First Name" id="fname" class="name_box1" autocomplete="off" required> <!--FIRST NAME BOX-->
+            <i class="fa-solid fa-circle-check" class="icon"></i>
+            <i class="fa-solid fa-circle-exclamation" class="icon"></i>
+            <small class="msg">Error Message</small>
+        </div>
+
+        <div class="control">
+            <i class="fa-solid fa-user"></i>         <!--NAME ICON-->       
+            <input type="text" placeholder="Last Name" id="lname" class="name_box2" autocomplete="off" required> <!--LAST NAME BOX-->
+            <i class="fa-solid fa-circle-check"></i>   <!--CHECK ICON-->
+            <i class="fa-solid fa-circle-exclamation"></i>   <!--EXCLAMATION ICON-->
+            <small>Error Message</small>  <!--ERROR MESSAGE TO BE PRINTED HERE-->
+        </div>
+
+        <div class="control"> 
+            <i class="fa-solid fa-envelope "></i>    <!--EMAIL ICON-->
+            <input type="email" placeholder="abc123@gmail.com" id="email" class="round_box" autocomplete="off" required>   <!--EMAIL BOX-->
+            <i class="fa-solid fa-circle-check"></i>   <!--CHECK ICON-->
+            <i class="fa-solid fa-circle-exclamation"></i>   <!--EXCLAMATION ICON-->
+            <small>Error Message</small>  <!--ERROR MESSAGE TO BE PRINTED HERE-->
+        </div>
+
+
+        <div class="control">
+            <i class="fa-solid fa-phone"></i>   <!--PHONE ICON-->
+            <input type="number" id="phone" class="round_box" placeholder="9415*****4" autocomplete="off" required>   <!--PHONE NUMBER BOX-->
+            <i class="fa-solid fa-circle-check"></i>    <!--CHECK ICON-->
+            <i class="fa-solid fa-circle-exclamation"></i>    <!--EXCLAMATION ICON-->
+            <small>Error Message</small>    <!--ERROR MESSAGE TO BE PRINTED HERE-->
+        </div>
+
+
+        <div class="control">
+            <i class="fa-solid fa-lock"></i>    <!--LOCK ICON-->
+            <input type="password" id="password" class="round_box" placeholder="Create Password" required>   <!--PASSWORD BOX-->
+            <i class="fa-solid fa-circle-check"></i>   <!--CHECK ICON-->
+            <i class="fa-solid fa-circle-exclamation"></i>   <!--EXCLAMATION ICON-->
+            <small>Error Message</small>   <!--ERROR MESSAGE TO BE PRINTED HERE-->
+        </div>
+
+
+        <div class="control">
+            <i class="fa-solid fa-lock"></i>    <!--LOCK ICON-->
+            <input type="password" id="cpassword" class="round_box" placeholder="Confirm password" required>   <!--CONFIRM PASSWORD BOX-->
+            <i class="fa-solid fa-circle-check"></i>   <!--CHECK ICON-->
+            <i class="fa-solid fa-circle-exclamation"></i>    <!--EXCLAMATION ICON-->
+            <small>Error Message</small>    <!--ERROR MESSAGE TO BE PRINTED HERE-->
+        </div>
+
+
+        <div>
+            <input type="SUBMIT" value="SUBMIT" class="end_box" onclick="validate()">    <!--SUBMIT BUTTON TO CHECK VALIDATION-->
+        </div>
+
+
+    </form>
+</section>
+
+<script src="script.js"></script>  <!--LINKING OF JS-->
+</body>
+</html>
